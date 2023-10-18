@@ -36,3 +36,17 @@ tr:not(:last-child) td {
 tr:not(:last-child) td {
     border-bottom:  2px solid black;
 }
+.makediv{
+    width: 911px;
+    height: 300px;
+}
+.makeboldtext{
+    width: 230px;
+    height: 36px;
+}
+@media (max-width:500px){
+    .center{
+        width: 100%;
+    }
+    
+}
