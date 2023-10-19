@@ -56,7 +56,7 @@ tr:not(:last-child) td {
     .center{
         margin-left: 50px;
         margin-right: 50px;
-        width: 1200px;
+        zoom: %50;
     }
     
 }
