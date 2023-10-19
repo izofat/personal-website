@@ -1,11 +1,14 @@
 
 .center{
     margin: auto;
-    width: 60%;
+    width: 1000px;
+    margin-left: 500px;
+    margin-right: 300px;
+    height: 964px;
     
 }
 body{
-    background-color : lightgrey;
+    background-color : white;
 }
 
 .changefont{
@@ -31,14 +34,16 @@ table{
     font-size: 17.3px;
 }
 tr:not(:last-child) td {
-    border-bottom: 2px solid black;   
+    border-bottom: 2px solid white;   
 }
 tr:not(:last-child) td {
-    border-bottom:  2px solid black;
+    border-bottom:  2px solid white;
 }
 .makediv{
-    width: 911px;
+    width: 1000px;
     height: 300px;
+    background-color: black;
+    
 }
 .makeboldtext{
     width: 230px;
@@ -46,7 +51,11 @@ tr:not(:last-child) td {
 }
 @media (max-width:500px){
     .center{
-        width: 100%;
+        margin-left: 200px;
+        padding-right: 300px;
     }
     
+}
+#skillsdiv td{
+    color: white;
 }
