@@ -1,104 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>my blog</title>
-</head>
-<body class="makebody">
+
+.center{
+    margin: auto;
+    width: 1200px;
+    margin-left: 340px;
+    margin-right: 300px;
+    height: 964px;
     
+}
+.makebody{
+    width: 1300px;
+}
+body{
+    background-color : white;
+}
+
+.changefont{
+    font-style: italic;
+
+}
+
+.dontmakenewrow{
+    white-space: nowrap;
+}
+
+tr {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr > td:not(:has(img)) {
+    padding-left: 25px;
+}
+table{
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 17.3px;
+}
+tr:not(:last-child) td {
+    border-bottom: 2px solid white;   
+}
+tr:not(:last-child) td {
+    border-bottom:  2px solid white;
+}
+.makediv{
+    width: 1000px;
+    height: 300px;
+    background-color: black;
     
+}
+.makeboldtext{
+    width: 230px;
+    height: 36px;
+}
+@media (max-width:500px){
+    .center{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 1200px;
+    }
     
-    <div class="center" style="user-select: none ; background-color: black;"> 
-        <div style="padding-left: 100px;">
-            <div style="background-color: black;display: block;">
-                <h1 class="changefont" style="color:white;">
-                    Gorkem Kacar 
-                </h1>
-                <div  >
-                    <span style="color: lightgray; font-size: 21px;">Fullstack Developer</span>
-                    <div style="display: flex; padding-left: 670px;">
-                        <img src="pictures/github-sign.png" style=" background-color: white;" width="32" height="32">
-                        <span style="padding-left: 10px;  font-size: 30px;"><a href="https://github.com/izofat" target="_blank" style="color: white;">Github</a> </span>
-                        <img src="pictures/linkedin.png" style="padding-left: 20px;" width="32" height="32" >
-                        <span style="padding-left: 10px;  font-size: 30px;"><a href="https://www.linkedin.com/in/g%C3%B6rkem-ka%C3%A7ar-416312196/" target="_blank" style="color: white;">Linkedin</a></span>
-                    </div>
-                </div> 
-                 <br>
-                 <br>
-                
-            </div>
-            
-            <div style="display: flex;" class="makediv">
-                <img src="pictures/9a07b390-3100-4268-bd8a-46f7b0252004.jfif" width="400" height="300">
-                <span style="display: block; margin-left: 10px; color: white; font-size: 19px;">Hey there, I'm Gorkem Kacar, but you can just call me Izofat. At 18, I'm a young enthusiast who's been diving into the exciting world of full-stack development for about two years now. Currently, I'm a student at Celal Bayar University, majoring in Computer Engineering. My primary language of choice is C#, and I'm also well-versed in side languages like JavaScript, CSS, and HTML. My love for coding knows no bounds, and I'm constantly tinkering with new ideas and projects.</span>
-            </div>
-            <br>
-            <div class="changefont" style="color: dodgerblue; font-size:33px">
-                
-                <b>Skills</b>
-                <span style="padding-left: 500px; display: block; " class="makeboldtext"><b  style="display: flex;">My Last Projects</b></span>
-            </div>
-            <div id="skillsdiv" style=":not(table){
-                display: flex; 
-            }">
-            <br>
-                
-                                   
-                <div  style="display: flex;  ">
-                    <table >
-                        <tr >
-                            <td rowspan= "2" >
-                                <img src="pictures/c-sharp.png" width="96" height="96" >
-                            </td>
-                            
-                            <td  >WinForms .NetCore</td>    
-                               
-                        </tr>
-                        <tr>
-                            <td >WPF .NetCore</td>
-                            
-                        </tr>
-                        
-                    </table>
-                    
-                    <a href="https://github.com/izofat/LXMessenger" style="padding-left: 215px;" target="_blank">
-                        <img src="pictures/brave_9WL01CYn8U.png">
-                    </a>
-                </div>           
-                <br><br>
-                <table>
-                    <tr>
-                        <td rowspan="3">
-                            <img src="pictures/world-wide-web.png" width="96" height="96">
-                        </td>
-                        <td >HTMl</td>
-                    </tr>
-                    <tr>
-                        <td >JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td >CSS</td>
-                    </tr>
-                </table>
-                <br><br>
-                <table>
-                    <tr>
-                        <td rowspan="2" >
-                            <img src="pictures/database.png" width="96" height="96">
-                        </td>    
-                        <td >Azure</td>
-                    </tr>
-                    <tr>
-                        <td >SSMS</td>
-                    </tr>
-    
-                </table>
-                
-            </div>   
-        </div>       
-        
-    </div>
-</body>
-</html>
+}
+#skillsdiv td{
+    color: white;
+}
