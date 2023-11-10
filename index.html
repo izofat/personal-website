@@ -5,100 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>my blog</title>
+    <script src="main.js"></script>
 </head>
-<body class="makebody">
+<body>
     
-    
-    
-    <div class="center" style="user-select: none ; background-color: black;"> 
-        <div style="padding-left: 100px;">
-            <div style="background-color: black;">
-                <h1 class="changefont" style="color:white;">
-                    Gorkem Kacar 
-                </h1>
-                <div  >
-                    <span style="color: lightgray; font-size: 21px;">Fullstack Developer</span>
-                    <div style="display: flex; padding-left: 670px;">
-                        <img src="pictures/github-sign.png" style=" background-color: white;" width="32" height="32">
-                        <span style="padding-left: 10px;  font-size: 30px;"><a href="https://github.com/izofat" target="_blank" style="color: white;">Github</a> </span>
-                        <img src="pictures/linkedin.png" style="padding-left: 20px;" width="32" height="32" >
-                        <span style="padding-left: 10px;  font-size: 30px;"><a href="https://www.linkedin.com/in/g%C3%B6rkem-ka%C3%A7ar-416312196/" target="_blank" style="color: white;">Linkedin</a></span>
-                    </div>
-                </div> 
-                 <br>
-                 <br>
-                
+    <div id="maindiv">
+        <div id="headerdiv" style="display: flex;">
+            <h1 id="headername">Gorkem Kacar</h1>
+        </div>
+        <div id="linksdiv">
+            <span id="aboutmetext" class="aboutmetextset">FullStack </span>
+            <span class="aboutmetextset">Software </span>  
+            <span class="aboutmetextset">Developer</span>
+            <img id="githubpng" src="pictures/github.png" width="44px" height="44px">
+            <a id="githubbutton" name="githubbutton" onclick="goToGithub()" class="bn5">             
+                Github
+            </a>
+            <img src="pictures/linkedin.png" width="42px" height="42px" id="linkedinpng">
+            <a id="linkedinbutton" name="linkedinbutton" onclick="goToLinkedin()" class="bn5">                
+                Linkedin
+            </a>
+        </div>
+        <div id="divskills" >
+            <div>
+                <h2 id="skillstext">Skills</h2>
+            </div>
+            <div id="headerofskills" >
+                <button class="button" id="buttoncs">
+                    <img src="pictures/c-sharp.png" width="60px" height="60px">
+                </button>
+                <button class="button" id="buttonweb">
+                    <img src="pictures/world-wide-web.png" width="60px" height="60px">
+                </button>
+                <button class="button" id="buttondb">
+                    <img src="pictures/database.png" width="60px" height="60px">
+                </button>
+            </div>
+            <div id="altheaderofskills" style="display: flex;">
+                <button class="button" id="buttonwinforms">
+                    WinForms
+                </button>
+                <button class="button" id="buttonhtml">
+                    <img src="pictures/html-5.png"class="setsize" >
+                </button>
+                <button class="button" id="buttoncss">
+                    <img src="pictures/css-3.png" class="setsize">
+                </button>
+                <button class="button" id="buttonjs">
+                    <img src="pictures/js.png" class="setsize">
+                </button>
+                <button class="button" id="buttonazure">
+                    <img src="pictures/azure.png" class="setsize">
+                </button>
+                <button class="button" id="buttonmysql">
+                    <img src="pictures/mysql.png" class="setsize">
+                </button>
+            </div>
+        </div>
+        <div id="divabout" style="display: flex;">
+            <img src="pictures/9a07b390-3100-4268-bd8a-46f7b0252004.jfif" id="imgme">
+            <div style="display: inline;">
+                <div>
+                    <h6 class="text" style="width: 50%; margin-top: 100px;">
+                        Hi, I'm Gorkem Kacar, also known as Izofat, and I'm an 18-year-old studying Computer Engineering at Celal Bayar University. 
+                        I love working with computers, and I'm a Full Stack Developer.
+                    </h6>
+                    <h6>
+                        
+                    </h6>
+                </div>
+                <div>
+                    <h6 class="text" style="width: 50%;">
+                        I'm good at using C# WinForms, and I also know my way around HTML, CSS, and JavaScript. I've got experience working with databases too. I really enjoy learning new tech stuff and making things with code.
+                    </h6>
+                </div>
             </div>
             
-            <div style="display: flex;" class="makediv">
-                <img src="pictures/9a07b390-3100-4268-bd8a-46f7b0252004.jfif" width="400" height="300">
-                <span style="display: block; margin-left: 10px; color: white; font-size: 19px;">Hey there, I'm Gorkem Kacar, but you can just call me Izofat. At 18, I'm a young enthusiast who's been diving into the exciting world of full-stack development for about two years now. Currently, I'm a student at Celal Bayar University, majoring in Computer Engineering. My primary language of choice is C#, and I'm also well-versed in side languages like JavaScript, CSS, and HTML. My love for coding knows no bounds, and I'm constantly tinkering with new ideas and projects.</span>
-            </div>
-            <br>
-            <div class="changefont" style="color: dodgerblue; font-size:33px">
-                
-                <b>Skills</b>
-                <span style="padding-left: 500px; display: block; " class="makeboldtext"><b  style="display: flex;">My Last Projects</b></span>
-            </div>
-            <div id="skillsdiv" style=":not(table){
-                display: flex; 
-            }">
-            <br>
-                
-                                   
-                <div  style="display: flex;  ">
-                    <table >
-                        <tr >
-                            <td rowspan= "2" >
-                                <img src="pictures/c-sharp.png" width="96" height="96" >
-                            </td>
-                            
-                            <td  >WinForms .NetCore</td>    
-                               
-                        </tr>
-                        <tr>
-                            <td >WPF .NetCore</td>
-                            
-                        </tr>
-                        
-                    </table>
-                    
-                    <a href="https://github.com/izofat/LXMessenger" style="padding-left: 215px;" target="_blank">
-                        <img src="pictures/brave_9WL01CYn8U.png">
-                    </a>
-                </div>           
-                <br><br>
-                <table>
-                    <tr>
-                        <td rowspan="3">
-                            <img src="pictures/world-wide-web.png" width="96" height="96">
-                        </td>
-                        <td >HTMl</td>
-                    </tr>
-                    <tr>
-                        <td >JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td >CSS</td>
-                    </tr>
-                </table>
-                <br><br>
-                <table>
-                    <tr>
-                        <td rowspan="2" >
-                            <img src="pictures/database.png" width="96" height="96">
-                        </td>    
-                        <td >Azure</td>
-                    </tr>
-                    <tr>
-                        <td >SSMS</td>
-                    </tr>
-    
-                </table>
-                
-            </div>   
-        </div>       
-        
-    </div>
+        </div>
+    </div>  
 </body>
 </html>
